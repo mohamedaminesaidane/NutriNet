@@ -16,7 +16,6 @@ NutriNet is a PHP / MySQL web platform dedicated to a healthy and balanced lifes
 - [Configuration](#-configuration)
 - [Required folders and media](#-required-folders-and-media)
 - [Usage](#-usage)
-- [Known limitations](#-known-limitations)
 
 ---
 
@@ -293,20 +292,3 @@ Tables: `captcha`, `categorie`, `coach`, `coaching_session`, `items`, `panier`, 
 | `listrecettes.php`, `listRatings.php` | Recipes and ratings (not in the sidebar menu, open them directly) |
 
 ---
-
-## 🚧 Known limitations
-
-- **Passwords are stored in plain text** (users and coaches), and the "forgot password" email sends the password itself.
-- **Some SQL queries are built by concatenating values** instead of using prepared statements: `showProduit`, `showCategorie`, `showCoach`, `showItems`, `showPanier`, `showReclam`, `showResponse` and `recupererUtilisateurEmail`.
-- **SMTP credentials and Google keys are written directly in source files** (`send.php`, `formulaire.php`, `sign-up.php`, `products.php`). Replace them with your own.
-- **The role (including Admin) is chosen freely at sign-up.**
-- **Most back office pages do not check that the visitor is logged in.**
-- **`projet.sql` does not fully match the code**:
-  - the `recette` table has no `video_id` and `ingredients` columns, which the recipe code uses;
-  - the `user` table uses `idUser` / `nom`, while the user code uses `id` / `name`.
-- **Some classes are defined in several Controller files** (`SCC`, `roomC`, `CategorieC`, `ResponseController`): include only one of those files per page to avoid "cannot redeclare class" errors.
-- **Folder and file names are written with different cases in the code** (`Controller` / `controller`, `Model` / `model`, `CoachC.php` / `coachC.php`). It works on Windows, but on Linux / macOS (case-sensitive) the paths must be made consistent.
-
----
-
-
