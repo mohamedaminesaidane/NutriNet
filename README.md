@@ -17,8 +17,6 @@ NutriNet is a PHP / MySQL web platform dedicated to a healthy and balanced lifes
 - [Required folders and media](#-required-folders-and-media)
 - [Usage](#-usage)
 - [Known limitations](#-known-limitations)
-- [Contributing](#-contributing)
-- [Team](#-team)
 
 ---
 
