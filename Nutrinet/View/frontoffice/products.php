@@ -71,7 +71,7 @@
       <link rel="stylesheet" href="css/owl.carousel.min.css">
       <link rel="stylesoeet" href="css/owl.theme.default.min.css">
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css" media="screen">
-      <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCrzG7Zh_N1Rl38P47slE8TEEjVZk10qCo&callback=initMap"></script>
+      <script async defer src="https://maps.googleapis.com/maps/api/js?key="####################################################"></script>
       <script>
    function initMap() {
       var myLatLng = { lat: 36.801200, lng: 10.182320 }; // Replace with your store's coordinates
